@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background: #ff6f61;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    background: #ffffffcc;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #ff4e50;
+}
+
+button {
+    background: #ff4e50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
