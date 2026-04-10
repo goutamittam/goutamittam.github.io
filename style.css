@@ -184,3 +184,32 @@ footer {
   color: black;
   transform: scale(1.05);
 }
+
+/* TIMELINE */
+.timeline {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.timeline-item i {
+  font-size: 30px;
+  color: #00ffcc;
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 0 20px #00ffcc;
+}
