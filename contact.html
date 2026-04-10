@@ -25,37 +25,69 @@
     </div>
 </nav>
 
-<!-- CONTACT SECTION -->
 <section class="page-section">
 
-    <div class="glass-card full">
+<div class="glass-card full">
 
-        <h2>Contact Me</h2>
+<h2>Contact Me</h2>
 
-        <div class="contact-links">
+<!-- CONTACT BUTTONS -->
+<div class="contact-links">
 
-            <div class="contact-btn" onclick="sendMail()">
-                <i class="fa fa-envelope"></i> Email Me
-            </div>
+<div class="contact-btn" onclick="sendMail()">
+<i class="fa fa-envelope"></i> Email Me
+</div>
 
-            <div class="contact-btn" onclick="openLinkedIn()">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </div>
+<div class="contact-btn" onclick="copyEmail()">
+<i class="fa fa-copy"></i> Copy Email
+</div>
 
-            <div class="contact-btn" onclick="openGitHub()">
-                <i class="fab fa-github"></i> GitHub
-            </div>
+<div class="contact-btn" onclick="openLinkedIn()">
+<i class="fab fa-linkedin"></i> LinkedIn
+</div>
 
-        </div>
+<div class="contact-btn" onclick="openGitHub()">
+<i class="fab fa-github"></i> GitHub
+</div>
 
-    </div>
+<div class="contact-btn" onclick="openWhatsApp()">
+<i class="fab fa-whatsapp"></i> WhatsApp
+</div>
 
+</div>
+
+<!-- CONTACT FORM -->
+<form class="contact-form" onsubmit="submitForm(event)">
+
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<p id="msg"></p>
+
+</div>
 </section>
 
-<!-- JS -->
+<!-- FLOATING SOCIAL BAR -->
+<div class="social-bar">
+<i class="fab fa-linkedin" onclick="openLinkedIn()"></i>
+<i class="fab fa-github" onclick="openGitHub()"></i>
+<i class="fab fa-whatsapp" onclick="openWhatsApp()"></i>
+</div>
+
 <script>
+
 function sendMail(){
-window.location.href="mailto:goutamittam207@gmail.com?subject=Hello&body=Hello%20there";
+window.location.href="mailto:goutamittam207@gmail.com";
+}
+
+function copyEmail(){
+navigator.clipboard.writeText("goutamittam207@gmail.com");
+alert("Email copied!");
 }
 
 function openLinkedIn(){
@@ -65,6 +97,16 @@ window.open("https://linkedin.com/in/omkar-ittam-3b915b3ba","_blank");
 function openGitHub(){
 window.open("https://github.com/goutamittam","_blank");
 }
+
+function openWhatsApp(){
+window.open("https://wa.me/91XXXXXXXXXX","_blank"); // add your number
+}
+
+function submitForm(e){
+e.preventDefault();
+document.getElementById("msg").innerText = "Message sent successfully!";
+}
+
 </script>
 
 </body>
