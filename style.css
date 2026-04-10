@@ -153,3 +153,34 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* CONTACT BUTTONS */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.contact-btn {
+  width: 250px;
+  padding: 15px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.contact-btn i {
+  margin-right: 10px;
+}
+
+.contact-btn:hover {
+  background: #00ffcc;
+  color: black;
+  transform: scale(1.05);
+}
