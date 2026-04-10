@@ -2,29 +2,57 @@
 <html>
 <head>
 <title>Contact</title>
+
 <link rel="stylesheet" href="style.css">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="education.html">Education</a>
-<a href="skills.html">Skills</a>
-<a href="projects.html">Projects</a>
-<a href="experience.html">Experience</a>
-<a href="contact.html">Contact</a>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Goutam</div>
+    <div class="nav-links">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="about.html"><i class="fa fa-user"></i> About</a>
+        <a href="education.html"><i class="fa fa-graduation-cap"></i> Education</a>
+        <a href="skills.html"><i class="fa fa-brain"></i> Skills</a>
+        <a href="projects.html"><i class="fa fa-code"></i> Projects</a>
+        <a href="experience.html"><i class="fa fa-briefcase"></i> Experience</a>
+        <a href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
+    </div>
 </nav>
 
-<section>
-<h2>Contact</h2>
+<!-- CONTACT SECTION -->
+<section class="page-section">
 
-<p onclick="sendMail()" style="cursor:pointer;color:blue;">📧 Email Me</p>
-<p onclick="openLinkedIn()" style="cursor:pointer;color:blue;">LinkedIn</p>
-<p onclick="openGitHub()" style="cursor:pointer;color:blue;">GitHub</p>
+    <div class="glass-card full">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact-links">
+
+            <div class="contact-btn" onclick="sendMail()">
+                <i class="fa fa-envelope"></i> Email Me
+            </div>
+
+            <div class="contact-btn" onclick="openLinkedIn()">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </div>
+
+            <div class="contact-btn" onclick="openGitHub()">
+                <i class="fab fa-github"></i> GitHub
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
+<!-- JS -->
 <script>
 function sendMail(){
 window.location.href="mailto:goutamittam207@gmail.com?subject=Hello&body=Hello%20there";
