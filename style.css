@@ -1,28 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-    text-align: center;
-    margin: 0;
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: white;
 }
+
 
 /* NAVBAR */
-nav {
-    background: #020617;
-    padding: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+.navbar {
+  background: #020617;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 18px;
 }
 
-nav a {
-    color: white;
-    margin: 0 12px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-nav a:hover {
-    color: #00ffcc;
+.navbar a:hover {
+  color: cyan;
 }
 
 /* SECTION */
@@ -31,14 +32,20 @@ section {
 }
 
 /* HERO TEXT IMPROVEMENT */
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
 }
 
-.hero p {
-    font-size: 18px;
-    color: #cbd5f5;
+.profile {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px cyan;
+  margin-bottom: 20px;
 }
 
 /* EXPERIENCE CARDS */
@@ -87,8 +94,47 @@ section {
 
 /* FOOTER */
 footer {
-    padding: 15px;
-    background: #020617;
-    margin-top: 40px;
-    font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 250px;
+  margin: 15px;
+  border-radius: 10px;
 }
