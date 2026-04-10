@@ -125,3 +125,31 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+/* PAGE SECTION CENTER */
+.page-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+/* FULL WIDTH CARD */
+.glass-card.full {
+  width: 60%;
+  text-align: center;
+}
+
+/* NAVBAR FIX (for all pages) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+}
