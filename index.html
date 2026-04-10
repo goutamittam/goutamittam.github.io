@@ -2,45 +2,64 @@
 <html>
 <head>
     <title>Goutam Ittam Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="achievements.html">Achievements</a>
-    <a href="projects.html">Projects</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
+    <div class="logo">Goutam</div>
+    <div class="nav-links">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="about.html"><i class="fa fa-user"></i> About</a>
+        <a href="projects.html"><i class="fa fa-code"></i> Projects</a>
+        <a href="gallery.html"><i class="fa fa-image"></i> Gallery</a>
+        <a href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
+    </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
 
-    <!-- PROFILE IMAGE TOP RIGHT -->
-    <img src="profile.jpg" class="profile-top">
+    <img src="photo.jpg" class="profile-top">
 
-    <h1>Goutam Ittam</h1>
-    <h2>Pharmacy Student</h2>
-    <p>AI Enthusiast | Future Healthcare Innovator</p>
+    <h1>Hi, I'm <span>Goutam Ittam</span></h1>
+
+    <h2><span id="typing"></span></h2>
+
+    <p>Building future in AI + Healthcare 🚀</p>
+
+    <button class="btn">View Projects</button>
 
 </section>
 
-<!-- SAMPLE CARD SECTION -->
-<section>
-    <div class="card">
-        <h2>Welcome</h2>
-        <p>This is my personal portfolio website where I showcase my skills, projects, and achievements.</p>
+<!-- CARD SECTION -->
+<section class="glass-section">
+    <div class="glass-card">
+        <h2>About Me</h2>
+        <p>B.Pharmacy Student at MIT Vishwaprayag University. Passionate about AI in Healthcare.</p>
+    </div>
+
+    <div class="glass-card">
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript, AI Tools, Pharmacy Knowledge</p>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Goutam Ittam</p>
+    <p>© 2026 Goutam Ittam | All Rights Reserved</p>
 </footer>
+
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
