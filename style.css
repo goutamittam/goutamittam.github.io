@@ -184,7 +184,65 @@ footer {
   color: black;
   transform: scale(1.05);
 }
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
 
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #00ffcc;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  background: cyan;
+}
+
+/* FLOATING SOCIAL BAR */
+.social-bar {
+  position: fixed;
+  right: 10px;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-bar i {
+  background: #00ffcc;
+  color: black;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-bar i:hover {
+  transform: scale(1.2);
+}
 /* TIMELINE */
 .timeline {
   margin-top: 30px;
