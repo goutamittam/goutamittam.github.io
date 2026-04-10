@@ -5,7 +5,6 @@ body {
   color: white;
 }
 
-
 /* NAVBAR */
 .navbar {
   background: #020617;
@@ -28,79 +27,42 @@ body {
 
 /* SECTION */
 section {
-    padding: 60px 20px;
+  padding: 60px 20px;
 }
 
-/* HERO TEXT IMPROVEMENT */
+/* HERO */
 .hero {
+  position: relative;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 90vh;
-  text-align: center;
+  padding-left: 60px;
+  text-align: left;
 }
 
-.profile {
-  width: 250px;
+/* PROFILE IMAGE TOP RIGHT */
+.profile-top {
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  box-shadow: 0 0 25px cyan;
-  margin-bottom: 20px;
+  object-fit: cover;
+  border: 4px solid #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
+  transition: 0.3s;
 }
 
-/* EXPERIENCE CARDS */
-.experience-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
+.profile-top:hover {
+  transform: scale(1.1);
 }
 
-.exp-card {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 20px;
-    border-radius: 15px;
-    width: 280px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 15px rgba(0,255,204,0.2);
-    transition: 0.3s;
-}
-
-.exp-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 0 25px #00ffcc;
-}
-
-.exp-card h3 {
-    margin-bottom: 10px;
-    color: #00ffcc;
-}
-
-/* PROFILE IMAGE */
-.profile-pic {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid #00ffcc;
-    box-shadow: 0 0 30px #00ffcc;
-    transition: 0.3s;
-}
-
-.profile-pic:hover {
-    transform: scale(1.08);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #020617;
-}
-
+/* TEXT */
 h1 {
   font-size: 40px;
+  color: #00ffcc;
 }
 
 h2 {
@@ -126,6 +88,34 @@ p {
   transform: scale(1.05);
 }
 
+/* EXPERIENCE CARDS */
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.exp-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0,255,204,0.2);
+  transition: 0.3s;
+}
+
+.exp-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px #00ffcc;
+}
+
+.exp-card h3 {
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
 /* GRID */
 .grid {
   display: flex;
@@ -137,4 +127,11 @@ img {
   width: 250px;
   margin: 15px;
   border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
 }
