@@ -321,3 +321,37 @@ footer {
   background: cyan;
   transform: scale(1.1);
 }
+
+/* SKILLS */
+.skill {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.skill p {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* BAR */
+.bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* FILL ANIMATION */
+.fill {
+  height: 100%;
+  background: #00ffcc;
+  border-radius: 10px;
+  width: 0;
+  animation: fillAnim 2s forwards;
+}
+
+/* ANIMATION */
+@keyframes fillAnim {
+  from { width: 0; }
+}
